@@ -21,7 +21,7 @@ jobs:
           node-version: 22.x
           cache: 'npm'
       - name: Install dependencies
-        run: npm install
+        run: npm ci
       - name: Start unit test
         run: npm run test:unit
       - name: My username in SoftUni
@@ -48,7 +48,7 @@ jobs:
           node-version: 22.x
           cache: 'npm'
       - name: Install dependencies
-        run: npm install
+        run: npm ci
       - name: Install npx playwright
         run: npx playwright install
       - name: Start unit test
